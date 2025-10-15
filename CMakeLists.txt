@@ -1,7 +1,8 @@
-cmake_minimum_required(VERSION 3.10)
-project(UUIDGenerator)
+cmake_minimum_required(VERSION 3.12...3.21 FATAL_ERROR)
+project(UUIDGenerator VERSION 1.0 DESCRIPTION "UUID Generator Online Tool" LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Find required packages
