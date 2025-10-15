@@ -1,6 +1,8 @@
-# Building and Running
+# UUID Online Generator Tool
 
-## Create build directory and build:
+## Building and Running
+
+### Create build directory and build:
 
 ```bash
 
@@ -10,7 +12,7 @@ cmake ..
 make
 ```
 
-## Run the application:
+### Run the application:
 
 ```bash
 
@@ -21,11 +23,11 @@ make
 ./uuid-generator --http-port=8080 --docroot=. --approot=.
 ```
 
-## Access the application:
+### Access the application:
 
 Open your web browser and navigate to http://localhost:8080
 
-### Features
+#### Features
 
 - UUID Generation: Generates RFC-compliant UUID version 4 (random)
 - User Interface: Clean, responsive web interface
@@ -33,14 +35,14 @@ Open your web browser and navigate to http://localhost:8080
 - New Generation: Button to generate a new UUID on demand
 - Proper Formatting: UUIDs are displayed in the standard 8-4-4-4-12 format
 
-### Dependencies
+#### Dependencies
 
 - C++14 compatible compiler
 - CMake 3.10+
 - Emweb Wt Toolkit (libwt-dev, libwthttp-dev)
 - PkgConfig
 
-## Installation on Ubuntu/Debian:
+### Installation on Ubuntu/Debian:
 
 ```bash
 sudo apt-get update
