@@ -28,8 +28,7 @@ public:
         container->addWidget(std::make_unique<Wt::WBreak>());
 
         // Add description
-        auto description = container->addWidget(std::make_unique<Wt::WText>(
-            "Generate random UUIDs (Universally Unique Identifiers)"));
+        auto description = container->addWidget(std::make_unique<Wt::WText>("Generate random UUIDs (Universally Unique Identifiers)"));
         description->setStyleClass("description");
 
         container->addWidget(std::make_unique<Wt::WBreak>());
@@ -46,6 +45,8 @@ public:
         uuidEdit_->setTextSize(36);
         uuidEdit_->setReadOnly(true);
         uuidEdit_->setStyleClass("uuid-field");
+        uuidEdit_->setDeferredToolTip(true);
+        uuidEdit_->setToolTip("Generate random UUIDs (Universally Unique Identifiers)");
 
         container->addWidget(std::make_unique<Wt::WBreak>());
         container->addWidget(std::make_unique<Wt::WBreak>());
